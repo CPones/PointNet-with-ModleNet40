@@ -1,5 +1,6 @@
 # 函数功能
 ```
+|-- pointnet_utils.py     #基础组件
 |-- pointnet_cls.py       #点云分类
 |-- pointnet_part_seg.py  #点云部件分割
 |-- pointnet_sem_seg.py   #点云场景分割
