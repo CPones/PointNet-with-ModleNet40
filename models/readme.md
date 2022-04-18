@@ -12,11 +12,11 @@ from pointnet_utils import PointNetEncoder
 from torchsummary import summary
 
 def main():
-  model = PointNetEncoder().cuda()
-  summary(model, (3, 1024))
+    model = PointNetEncoder().cuda()
+    summary(model, (3, 1024))
 
 if __name__ == '__main__':
-  main()
+    main()
 ```
 
 ```
@@ -74,13 +74,13 @@ import torch
 from pointnet_cls import get_model
 
 def main():
-  ins = torch.randn([16, 6, 1024]).cuda()
-  model = get_model().cuda()
-  out1, out2 = model(ins)
-  print(out1.shape, out2.shape)
-  
+    ins = torch.randn([16, 6, 1024]).cuda()
+    model = get_model().cuda()
+    out1, out2 = model(ins)
+    print(out1.shape, out2.shape)
+
 def __name__ == "__main__":
-  main()
+    main()
 ```
 
 ```
