@@ -5,7 +5,6 @@ import torch.utils.data
 from torch.autograd import Variable
 import numpy as np
 import torch.nn.functional as F
-from torchsummary import summary
 
 
 class STN3d(nn.Module):
@@ -157,3 +156,4 @@ def feature_transform_reguliarzer(trans):
         I = I.cuda()
     loss = torch.mean(torch.norm(torch.bmm(trans, trans.transpose(2, 1)) - I, dim=(1, 2)))
     return loss
+
