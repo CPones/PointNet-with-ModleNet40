@@ -80,7 +80,7 @@ def main():
     out1, out2 = model(ins)
     print(out1.shape, out2.shape)
 
-def __name__ == "__main__":
+if __name__ == "__main__":
     main()
 ```
 
