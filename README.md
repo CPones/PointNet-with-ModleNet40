@@ -45,6 +45,28 @@
 - random_point_dropout：随机正则化
 
 ## 二、项目运行
+### 2.1 环境信息
+- CPU:AMD RX3600 6core 3.60GHz 16G
+- GPU:NIVIDIA GTX 1650 4G
+- Windons10
+- Python3.7
+- pytorch1.7.1
+- Cuda10.1
+- cuDNN7.6.5
+### 2.2 模型训练
+
+```
+python train.py
+```
+
+### 2.3 模型测试
+
+```
+python test.py
+```
+
+### 2.4 模型保存
+
 
 
 ## 三、项目总结
