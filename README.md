@@ -10,7 +10,7 @@
 - 输入维度`n×3`，输出维度`n×k`或`n×m`，其中`n`为点云个数，`m`为分类类别数，`k`为分割类别数。
 - T-Net空间旋转变换，mlp多层感知机，max pool全局池化层，global feature特征融合。
 
-### 1.2 数据集介绍
+### 1.2 数据集
 ![](./images/ModelNet40.png)
 - 左图为三维模型类别词云：右图为chair三维模型可视化。
 - 数据集下载地址：[ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip)
@@ -34,6 +34,15 @@
   |--modelnet40_train.txt       # modelnet40训练集
   |--modelnet40_test.txt        # modelnet40测试集
 ```
+
+### 1.3 数据增强
+数据增强扩大训练样本数量，提升模型泛化能力，有效避免过拟合。选择合适的数据增强策略能提升模型精度，本项目提供几种常用点云数据增强函数，保存在`provider.py`文件中。
+- normalize_data：归一化
+- rotate_point_cloud：空间坐标旋转，α、β、γ轴
+- jitter_pointnet_cloud：添加高斯噪声
+- shift_pointnet_cloud：空间坐标平移，x、y、z轴
+- random_scale_point_cloud：随机缩放
+- random_point_dropout：随机正则化
 
 ## 二、项目运行
 
