@@ -124,9 +124,10 @@ class ModelNetDataLoader(Dataset):
         point_set[:, 0:3] = pc_normalize(point_set[:, 0:3])
         if not self.use_normals:
             point_set = point_set[:, 0:3]
-
+        
+        #[L, C] = [1024, 3], [label] = [0~39]
         return point_set, label[0]
-
+    
     def __getitem__(self, index):
         return self._get_item(index)
 
