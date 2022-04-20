@@ -53,6 +53,13 @@
 - pytorch1.7.1
 - Cuda10.1
 - cuDNN7.6.5
+```
+pip install -r requirements.txt
+```
+
+### 2.2 数据集准备
+数据集下载路径[ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip)，解压后存放在`data/modelnet40_normal_resampled`路径下。
+
 ### 2.2 模型训练
 
 ```
