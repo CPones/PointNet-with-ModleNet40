@@ -71,6 +71,7 @@ python test.py
 ```
 
 ### 2.4 结果保存
+模型训练结果保存[地址]()，下载后保存在路径`log/classification/pointnet_modelnet40`下，断点恢复继续训练。
 | model | accuracy |
 |  :-:  |   :-:    |
 | pointnet(official) | 89.2 |
@@ -78,6 +79,8 @@ python test.py
 
 
 ## 三、项目总结
-
+PointNet作为基于深度学习处理点云数据的开山之作，提供了一种全新的深度神经网络结构，具有开创新时代的意义。本项目使用Pytorch搭建模型训练环境，模型精度可以达到论文给出的89.2%，开源贡献者们可以尝试使用数据增强策略进一步提升精度。由于PointNet自身存在一定的局限性，后续的研究者相继对其进行模型改进，主要方式集中在局部特征融合、卷积核算子、注意力机制等方面。
 
 ## 四、参考引用
+>开源项目：[https://github.com/yanx27/Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)
+>论文下载：[https://arxiv.org/pdf/1612.00593.pdf](https://arxiv.org/pdf/1612.00593.pdf)
