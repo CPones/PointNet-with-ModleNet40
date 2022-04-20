@@ -61,19 +61,20 @@ pip install -r requirements.txt
 数据集下载路径[ModelNet40](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip)，解压后存放在`data/modelnet40_normal_resampled`路径下。
 
 ### 2.2 模型训练
-
 ```
 python train.py
 ```
 
 ### 2.3 模型测试
-
 ```
 python test.py
 ```
 
-### 2.4 模型保存
-
+### 2.4 结果保存
+| model | accuracy |
+|  :-:  |   :-:    |
+| pointnet(official) | 89.2 |
+| pointnet(ours) | |
 
 
 ## 三、项目总结
