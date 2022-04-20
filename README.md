@@ -71,7 +71,7 @@ python test.py
 ```
 
 ### 2.4 结果保存
-模型训练结果保存[地址]()，下载后保存在路径`log/classification/pointnet_modelnet40`下，断点恢复继续训练。
+模型训练结果保存[地址]()
 | model | accuracy |
 |  :-:  |   :-:    |
 | pointnet(official) | 89.2 |
@@ -83,4 +83,5 @@ PointNet作为基于深度学习处理点云数据的开山之作，提供了一
 
 ## 四、参考引用
 >开源项目：[https://github.com/yanx27/Pointnet_Pointnet2_pytorch](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)
+
 >论文下载：[https://arxiv.org/pdf/1612.00593.pdf](https://arxiv.org/pdf/1612.00593.pdf)
